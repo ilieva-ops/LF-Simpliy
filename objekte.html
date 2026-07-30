@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Objekte — LF Simplify</title>
+<meta name="description" content="Unsere Wohnungen und WG-Zimmer in der Region Stuttgart — bald an dieser Stelle.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LF</span>
+      <span class="brand-name">LF <span>Simplify</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" id="nav0">Startseite</a>
+      <a href="vermieter.html" id="nav1">Für Vermieter</a>
+      <a href="mieter.html" id="nav2">Für Bewohner</a>
+      <a href="objekte.html" class="current" id="nav3">Objekte</a>
+      <a href="index.html#kontakt" id="nav4">Kontakt</a>
+      <div class="nav-sep"></div>
+      <div class="langs">
+        <button class="lang act" onclick="setLang('de')">DE</button>
+        <button class="lang" onclick="setLang('en')">EN</button>
+        <button class="lang" onclick="setLang('es')">ES</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="soon">
+  <div class="soon-inner">
+    <div class="grid-motif" id="motif" aria-hidden="true"></div>
+    <div class="eyebrow center" id="s-eye">Objekte</div>
+    <h1 class="h-serif" id="s-h1">Hier entsteht <em>etwas.</em></h1>
+    <p id="s-p">An dieser Stelle zeigen wir bald unsere Wohnungen und verfügbaren Zimmer in der Region Stuttgart. Sie sind Eigentümer und möchten Teil davon sein? Sprechen Sie uns an.</p>
+    <div class="soon-actions">
+      <a href="vermieter.html" class="btn btn-gold" id="s-cta1">Für Vermieter <span class="arw">→</span></a>
+      <a href="index.html#kontakt" class="btn btn-outline" id="s-cta2">Kontakt</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">LF <span>Simplify</span> <small style="color:rgba(255,255,255,.4)">· Wohnraum-Management Region Stuttgart</small></div>
+    <div class="footer-tag" id="foot-tag">Strukturiertes Wohnen. Verlässliche Vermietung.</div>
+  </div>
+</footer>
+
+<script>
+const T={
+de:{nav:['Startseite','Für Vermieter','Für Bewohner','Objekte','Kontakt'],sEye:'Objekte',sH1:'Hier entsteht <em>etwas.</em>',sP:'An dieser Stelle zeigen wir bald unsere Wohnungen und verfügbaren Zimmer in der Region Stuttgart. Sie sind Eigentümer und möchten Teil davon sein? Sprechen Sie uns an.',sCta1:'Für Vermieter',sCta2:'Kontakt',footTag:'Strukturiertes Wohnen. Verlässliche Vermietung.'},
+en:{nav:['Home','For landlords','For residents','Properties','Contact'],sEye:'Properties',sH1:'Something is <em>taking shape.</em>',sP:'This is where we\u2019ll soon show our apartments and available rooms in the Stuttgart region. You own property and want to be part of it? Get in touch.',sCta1:'For landlords',sCta2:'Contact',footTag:'Structured living. Reliable renting.'},
+es:{nav:['Inicio','Para propietarios','Para residentes','Inmuebles','Contacto'],sEye:'Inmuebles',sH1:'Aquí nace <em>algo.</em>',sP:'Aquí mostraremos pronto nuestros pisos y habitaciones disponibles en la región de Stuttgart. ¿Tienes un inmueble y quieres formar parte? Contáctanos.',sCta1:'Para propietarios',sCta2:'Contacto',footTag:'Vivir estructurado. Alquilar con confianza.'}
+};
+function set(id,val,html){const el=document.getElementById(id);if(!el)return;if(html)el.innerHTML=val;else el.textContent=val;}
+function setLang(l){
+  const t=T[l];if(!t)return;document.documentElement.lang=l;
+  document.querySelectorAll('.lang').forEach(b=>b.classList.toggle('act',b.textContent.trim().toLowerCase()===l));
+  t.nav.forEach((v,i)=>set('nav'+i,v));
+  set('s-eye',t.sEye);set('s-h1',t.sH1,true);set('s-p',t.sP);
+  set('s-cta1',t.sCta1+' <span class="arw">→</span>',true);set('s-cta2',t.sCta2);
+  set('foot-tag',t.footTag);
+}
+document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open');});
+(function(){
+  const m=document.getElementById('motif');if(!m)return;
+  const on=new Set([3,5,12,14]);
+  for(let i=0;i<16;i++){const s=document.createElement('i');if(on.has(i))s.classList.add('on');s.style.animationDelay=(i*0.04)+'s';m.appendChild(s);}
+})();
+</script>
+</body>
+</html>

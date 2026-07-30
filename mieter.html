@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Für Bewohner — LF Simplify</title>
+<meta name="description" content="Ruhige, gepflegte WG-Zimmer für Studenten, Auszubildende und Berufstätige in der Region Stuttgart — bald verfügbar.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LF</span>
+      <span class="brand-name">LF <span>Simplify</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" id="nav0">Startseite</a>
+      <a href="vermieter.html" id="nav1">Für Vermieter</a>
+      <a href="mieter.html" class="current" id="nav2">Für Bewohner</a>
+      <a href="objekte.html" id="nav3">Objekte</a>
+      <a href="index.html#kontakt" id="nav4">Kontakt</a>
+      <div class="nav-sep"></div>
+      <div class="langs">
+        <button class="lang act" onclick="setLang('de')">DE</button>
+        <button class="lang" onclick="setLang('en')">EN</button>
+        <button class="lang" onclick="setLang('es')">ES</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="soon on-navy">
+  <div class="soon-inner">
+    <div class="grid-motif" id="motif" aria-hidden="true"></div>
+    <div class="eyebrow center" style="color:var(--gold-2)" id="s-eye">Für Bewohner</div>
+    <h1 class="h-serif" id="s-h1">Dein Zimmer ist <em>bald</em> hier.</h1>
+    <p id="s-p">Ruhige, gepflegte WG-Zimmer für Studenten, Auszubildende und Berufstätige in der Region Stuttgart — wir bereiten gerade unsere ersten Wohnungen vor. Schreib uns schon jetzt, und wir melden uns, sobald etwas frei ist.</p>
+    <div class="soon-actions">
+      <a href="index.html#kontakt" class="btn btn-gold" id="s-cta1">Interesse melden <span class="arw">→</span></a>
+      <a href="index.html" class="btn btn-light" id="s-cta2">Zur Startseite</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">LF <span>Simplify</span> <small style="color:rgba(255,255,255,.4)">· Wohnraum-Management Region Stuttgart</small></div>
+    <div class="footer-tag" id="foot-tag">Strukturiertes Wohnen. Verlässliche Vermietung.</div>
+  </div>
+</footer>
+
+<script>
+const T={
+de:{nav:['Startseite','Für Vermieter','Für Bewohner','Objekte','Kontakt'],sEye:'Für Bewohner',sH1:'Dein Zimmer ist <em>bald</em> hier.',sP:'Ruhige, gepflegte WG-Zimmer für Studenten, Auszubildende und Berufstätige in der Region Stuttgart — wir bereiten gerade unsere ersten Wohnungen vor. Schreib uns schon jetzt, und wir melden uns, sobald etwas frei ist.',sCta1:'Interesse melden',sCta2:'Zur Startseite',footTag:'Strukturiertes Wohnen. Verlässliche Vermietung.'},
+en:{nav:['Home','For landlords','For residents','Properties','Contact'],sEye:'For residents',sH1:'Your room is <em>almost</em> here.',sP:'Calm, well-kept rooms in shared homes for students, apprentices and working professionals in the Stuttgart region — we\u2019re preparing our first apartments right now. Write to us today and we\u2019ll reach out as soon as something is available.',sCta1:'Register interest',sCta2:'Back to home',footTag:'Structured living. Reliable renting.'},
+es:{nav:['Inicio','Para propietarios','Para residentes','Inmuebles','Contacto'],sEye:'Para residentes',sH1:'Tu habitación llega <em>pronto</em>.',sP:'Habitaciones tranquilas y cuidadas en pisos compartidos para estudiantes, aprendices y profesionales en la región de Stuttgart — estamos preparando nuestros primeros pisos. Escríbenos ya y te avisaremos en cuanto haya algo libre.',sCta1:'Registrar interés',sCta2:'Volver al inicio',footTag:'Vivir estructurado. Alquilar con confianza.'}
+};
+function set(id,val,html){const el=document.getElementById(id);if(!el)return;if(html)el.innerHTML=val;else el.textContent=val;}
+function setLang(l){
+  const t=T[l];if(!t)return;document.documentElement.lang=l;
+  document.querySelectorAll('.lang').forEach(b=>b.classList.toggle('act',b.textContent.trim().toLowerCase()===l));
+  t.nav.forEach((v,i)=>set('nav'+i,v));
+  set('s-eye',t.sEye);set('s-h1',t.sH1,true);set('s-p',t.sP);
+  set('s-cta1',t.sCta1+' <span class="arw">→</span>',true);set('s-cta2',t.sCta2);
+  set('foot-tag',t.footTag);
+}
+document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open');});
+(function(){
+  const m=document.getElementById('motif');if(!m)return;
+  const on=new Set([1,6,10,13]);
+  for(let i=0;i<16;i++){const s=document.createElement('i');if(on.has(i))s.classList.add('on');s.style.animationDelay=(i*0.04)+'s';m.appendChild(s);}
+})();
+</script>
+</body>
+</html>

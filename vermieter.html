@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Für Vermieter — LF Simplify</title>
+<meta name="description" content="Wir mieten Ihre Wohnung langfristig als Hauptmieter an: pünktliche Mietzahlung, ein Vertragspartner, keine Party-WG. Wohnraum-Management in der Region Stuttgart.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LF</span>
+      <span class="brand-name">LF <span>Simplify</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" id="nav0">Startseite</a>
+      <a href="vermieter.html" class="current" id="nav1">Für Vermieter</a>
+      <a href="mieter.html" id="nav2">Für Bewohner</a>
+      <a href="objekte.html" id="nav3">Objekte</a>
+      <a href="index.html#kontakt" id="nav4">Kontakt</a>
+      <div class="nav-sep"></div>
+      <div class="langs">
+        <button class="lang act" onclick="setLang('de')">DE</button>
+        <button class="lang" onclick="setLang('en')">EN</button>
+        <button class="lang" onclick="setLang('es')">ES</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow hero-eye" id="h-eye">Für Eigentümer &amp; Vermieter</div>
+    <h1 class="h-serif" id="h-h1">Zuverlässige &amp; <em>langfristige</em> Vermietung</h1>
+    <p class="lead" id="h-p">Wir mieten Ihre Wohnung als Hauptmieter an und übernehmen die volle Verantwortung — Sie erhalten planbare Mieteinnahmen ohne Aufwand.</p>
+    <a href="index.html#kontakt" class="btn btn-gold" id="h-cta">Gespräch vereinbaren <span class="arw">→</span></a>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" id="t-eye">Vertrauensbasis</div>
+      <h2 class="section-title" id="t-ti">Warum wir ein zuverlässiger Partner sind</h2>
+      <p class="section-sub" id="t-su">Sicherheit für Eigentümer entsteht durch belastbare Fakten — nicht durch Versprechen. Diese Punkte bilden die Grundlage unserer Zusammenarbeit.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div><h3 id="t1h">SCHUFA vorhanden</h3><p id="t1p">Bonität ist geprüft und auf Anfrage nachweisbar.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><h3 id="t2h">Geregeltes Einkommen</h3><p id="t2p">Stabile, nachvollziehbare Einkommenssituation als Basis für pünktliche Zahlungen.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><h3 id="t3h">Region Stuttgart</h3><p id="t3p">Fest verwurzelt vor Ort — kurze Wege, schnelle Reaktionszeiten.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3 id="t4h">Langfristige Ausrichtung</h3><p id="t4p">Kein kurzfristiges Interesse — Planungssicherheit über Jahre statt Monate.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></div><h3 id="t5h">Persönliche Erreichbarkeit</h3><p id="t5p">Direkter Kontakt ohne Callcenter oder Warteschleifen.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></div><h3 id="t6h">Klare Verantwortlichkeiten</h3><p id="t6p">Eindeutig geregelte Zuständigkeiten im gesamten Mietverhältnis.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODEL ============ -->
+<section class="section" style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" id="m-eye">Das Modell</div>
+      <h2 class="section-title" id="m-ti">Unser Wohnkonzept</h2>
+    </div>
+    <div class="split">
+      <div class="dark-panel">
+        <h3 id="mo-h">Ein Vertrag. Ein Modell. Volle Kontrolle.</h3>
+        <p id="mo-p1">Wir mieten Wohnungen als Hauptmieter an und führen sie als klar strukturierte, ruhige Wohngemeinschaft. Jeder Bewohner wird sorgfältig ausgewählt, jede Nutzung ist auf Stabilität und langfristiges Wohnen ausgerichtet.</p>
+        <p id="mo-p2">Das Ergebnis: ein planbares Mietverhältnis ohne Koordinationsaufwand für Sie als Eigentümer.</p>
+        <div class="tagline" id="mo-tag">Hauptmieter-Modell mit voller Verantwortungsübernahme</div>
+      </div>
+      <div class="mini-list">
+        <div class="mini"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M9 15h6M9 11h2"/></svg></div><div><h4 id="mm1h">Anmietung als Hauptmieter</h4><p id="mm1p">Ein Vertrag, ein Ansprechpartner, volle Verantwortung bei uns.</p></div></div>
+        <div class="mini"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><h4 id="mm2h">Zielgruppe: Studenten, Azubis, Berufstätige</h4><p id="mm2p">Ruhige, zuverlässige und langfristig orientierte Bewohner.</p></div></div>
+        <div class="mini"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg></div><div><h4 id="mm3h">Keine Party-WG</h4><p id="mm3p">Ruhige Nutzung mit klaren Regeln und fester Struktur.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" id="a-eye">Ablauf</div>
+      <h2 class="section-title" id="a-ti">So funktioniert es</h2>
+      <p class="section-sub" id="a-su">Von der Anmietung bis zur laufenden Betreuung übernehmen wir die vollständige Organisation und Verantwortung — strukturiert in vier klaren Schritten.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="step-num">01</div><h4 id="s1h">Hauptmieter</h4><p id="s1p">Wir treten als Hauptmieter auf und übernehmen die volle vertragliche Verantwortung.</p></div>
+      <div class="step"><div class="step-num">02</div><h4 id="s2h">Organisation</h4><p id="s2p">Komplette Organisation und Verwaltung des Mietverhältnisses durch uns.</p></div>
+      <div class="step"><div class="step-num">03</div><h4 id="s3h">Bewohnerwahl</h4><p id="s3p">Sorgfältige, kontrollierte Auswahl ruhiger und zuverlässiger Bewohner.</p></div>
+      <div class="step"><div class="step-num">04</div><h4 id="s4h">Ansprechpartner</h4><p id="s4p">Ein fester Ansprechpartner für Eigentümer für alle Themen rund um die Immobilie.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section class="section" style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" id="b-eye">Ihr Nutzen</div>
+      <h2 class="section-title" id="b-ti">Vorteile für Vermieter</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M15 9.5c-.6-.9-1.7-1.5-3-1.5-1.9 0-3.5 1.3-3.5 3s1.6 3 3.5 3c1.3 0 2.4-.6 3-1.5"/></svg></div><h3 id="b1h">Pünktliche Mietzahlung</h3><p id="b1p">Vertraglich gesicherte, zuverlässige Zahlungen ohne Ausfallrisiko.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg></div><h3 id="b2h">Ein Vertragspartner</h3><p id="b2p">Ein Mietvertrag, ein Ansprechpartner — keine Koordination mit mehreren Mietern.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 6h13M8 12h13M8 18h13"/><path d="m3 6 1 1 2-2M3 12l1 1 2-2M3 18l1 1 2-2"/></svg></div><h3 id="b3h">Weniger Verwaltungsaufwand</h3><p id="b3p">Wir übernehmen die komplette Organisation des Mietverhältnisses.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m21 2-2 2m-7.6 7.6a5.5 5.5 0 1 1-7.8 7.8 5.5 5.5 0 0 1 7.8-7.8Zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div><h3 id="b4h">Langfristige Belegung</h3><p id="b4p">Dauerhafte, stabile Belegung minimiert das Leerstandsrisiko.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg></div><h3 id="b5h">Strukturierte Bewohnerauswahl</h3><p id="b5p">Geprüfte, ruhige und zuverlässige Bewohner nach klaren Kriterien.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M8 10h.01M16 10h.01M12 14h.01M8 14h.01M16 14h.01"/></svg></div><h3 id="b6h">Regelmäßige Kontrolle</h3><p id="b6p">Laufende Zustandsprüfung der Wohnung sichert den Werterhalt der Immobilie.</p></div>
+    </div>
+    <p style="margin-top:34px;font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:16.5px" id="b-res">Ergebnis: weniger Aufwand, mehr Sicherheit, eine langfristig stabile Vermietung.</p>
+  </div>
+</section>
+
+<!-- ============ GUARANTEE ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" id="g-eye">Unsere Garantie</div>
+      <h2 class="section-title" id="g-ti">Keine Party-WG — das sichern wir zu</h2>
+    </div>
+    <div class="banner" style="margin-bottom:26px">
+      <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <p><b id="g-bb">Keine Party-WG:</b> <span id="g-bp">Durch klare, interne Regeln und eine sorgfältige Auswahl der Bewohner wird sichergestellt, dass die Wohnung ruhig, ordentlich und verantwortungsvoll genutzt wird. Die Einhaltung dieser Regeln wird von uns aktiv begleitet und sichergestellt.</span></p>
+    </div>
+    <div class="grid-3">
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18M5 7h14M7 7l-3 7a4.5 4.5 0 0 0 6 0L7 7Zm10 0-3 7a4.5 4.5 0 0 0 6 0l-3-7Z"/></svg></div><h3 id="g1h">Verbindliche Hausordnung</h3><p id="g1p">Schriftlich festgehaltene Regeln für jede Wohngemeinschaft.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h3 id="g2h">Geprüfter Auswahlprozess</h3><p id="g2p">Persönliches Kennenlernen vor jeder Zusage.</p></div>
+      <div class="card"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3 id="g3h">Aktive Begleitung</h3><p id="g3p">Kontinuierliche Kontrolle statt einmaliger Übergabe.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESIDENT PROFILE ============ -->
+<section class="section section-navy">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" id="p-eye">Auswahlkriterien</div>
+      <h2 class="section-title" id="p-ti">Unser Bewohnerprofil</h2>
+      <p class="section-sub" id="p-su">Wir wählen Bewohner sorgfältig aus — ausschließlich ruhige, zuverlässige und respektvolle Personen mit langfristiger Wohnperspektive.</p>
+    </div>
+    <div class="grid-3">
+      <div class="person" style="text-align:center"><div class="person-ava" style="margin:0 auto 18px"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div><h3 id="pr1h">Studenten</h3><p style="margin-bottom:0" id="pr1p">Ruhig, lernorientiert und langfristig ausgerichtet.</p></div>
+      <div class="person" style="text-align:center"><div class="person-ava" style="margin:0 auto 18px"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg></div><h3 id="pr2h">Auszubildende</h3><p style="margin-bottom:0" id="pr2p">Diszipliniert, strukturiert und zuverlässig.</p></div>
+      <div class="person" style="text-align:center"><div class="person-ava" style="margin:0 auto 18px"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><h3 id="pr3h">Berufstätige</h3><p style="margin-bottom:0" id="pr3p">Beruflich etabliert, stabil und verantwortungsvoll.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUE PRESERVATION ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="eyebrow" id="w-eye">Substanzschutz</div>
+        <h2 class="section-title" id="w-ti">Werterhalt der Immobilie</h2>
+        <p class="section-sub" id="w-p">Durch die strukturierte Nutzung wird die Wohnung regelmäßig gepflegt und kontrolliert. Ein verantwortungsvoller Umgang sowie klare Abläufe sorgen für einen dauerhaft stabilen, gepflegten Zustand — und tragen so langfristig zum Werterhalt Ihrer Immobilie bei.</p>
+        <p style="margin-top:22px;font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:16.5px" id="w-tag">Wir behandeln jede Immobilie so, als wäre sie unsere eigene.</p>
+      </div>
+      <div class="mini-list">
+        <div class="mini"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M8 10h.01M16 10h.01"/></svg></div><div><h4 id="w1h">Regelmäßige Kontrolle</h4><p id="w1p">Laufende Zustandsprüfung durch uns als Hauptmieter.</p></div></div>
+        <div class="mini"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div><div><h4 id="w2h">Verantwortungsbewusstsein</h4><p id="w2p">Sorgfältiger, verantwortungsvoller Umgang mit der Immobilie.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band">
+      <div class="eyebrow center" style="color:var(--gold-2)" id="c-eye">Nächster Schritt</div>
+      <h2 id="c-ti">Lassen Sie uns sprechen</h2>
+      <p id="c-p">Gerne stellen wir unser Konzept persönlich vor und beantworten alle Fragen — unverbindlich und auf Augenhöhe.</p>
+      <a href="index.html#kontakt" class="btn btn-gold" id="c-cta">Kontakt aufnehmen <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">LF <span>Simplify</span> <small style="color:rgba(255,255,255,.4)">· Wohnraum-Management Region Stuttgart</small></div>
+    <div class="footer-tag" id="foot-tag">Strukturiertes Wohnen. Verlässliche Vermietung.</div>
+  </div>
+</footer>
+
+<script>
+const T={
+de:{
+ nav:['Startseite','Für Vermieter','Für Bewohner','Objekte','Kontakt'],
+ hEye:'Für Eigentümer & Vermieter',hH1:'Zuverlässige & <em>langfristige</em> Vermietung',
+ hP:'Wir mieten Ihre Wohnung als Hauptmieter an und übernehmen die volle Verantwortung — Sie erhalten planbare Mieteinnahmen ohne Aufwand.',hCta:'Gespräch vereinbaren',
+ tEye:'Vertrauensbasis',tTi:'Warum wir ein zuverlässiger Partner sind',tSu:'Sicherheit für Eigentümer entsteht durch belastbare Fakten — nicht durch Versprechen. Diese Punkte bilden die Grundlage unserer Zusammenarbeit.',
+ trust:[['SCHUFA vorhanden','Bonität ist geprüft und auf Anfrage nachweisbar.'],['Geregeltes Einkommen','Stabile, nachvollziehbare Einkommenssituation als Basis für pünktliche Zahlungen.'],['Region Stuttgart','Fest verwurzelt vor Ort — kurze Wege, schnelle Reaktionszeiten.'],['Langfristige Ausrichtung','Kein kurzfristiges Interesse — Planungssicherheit über Jahre statt Monate.'],['Persönliche Erreichbarkeit','Direkter Kontakt ohne Callcenter oder Warteschleifen.'],['Klare Verantwortlichkeiten','Eindeutig geregelte Zuständigkeiten im gesamten Mietverhältnis.']],
+ mEye:'Das Modell',mTi:'Unser Wohnkonzept',
+ moH:'Ein Vertrag. Ein Modell. Volle Kontrolle.',
+ moP1:'Wir mieten Wohnungen als Hauptmieter an und führen sie als klar strukturierte, ruhige Wohngemeinschaft. Jeder Bewohner wird sorgfältig ausgewählt, jede Nutzung ist auf Stabilität und langfristiges Wohnen ausgerichtet.',
+ moP2:'Das Ergebnis: ein planbares Mietverhältnis ohne Koordinationsaufwand für Sie als Eigentümer.',
+ moTag:'Hauptmieter-Modell mit voller Verantwortungsübernahme',
+ minis:[['Anmietung als Hauptmieter','Ein Vertrag, ein Ansprechpartner, volle Verantwortung bei uns.'],['Zielgruppe: Studenten, Azubis, Berufstätige','Ruhige, zuverlässige und langfristig orientierte Bewohner.'],['Keine Party-WG','Ruhige Nutzung mit klaren Regeln und fester Struktur.']],
+ aEye:'Ablauf',aTi:'So funktioniert es',aSu:'Von der Anmietung bis zur laufenden Betreuung übernehmen wir die vollständige Organisation und Verantwortung — strukturiert in vier klaren Schritten.',
+ steps:[['Hauptmieter','Wir treten als Hauptmieter auf und übernehmen die volle vertragliche Verantwortung.'],['Organisation','Komplette Organisation und Verwaltung des Mietverhältnisses durch uns.'],['Bewohnerwahl','Sorgfältige, kontrollierte Auswahl ruhiger und zuverlässiger Bewohner.'],['Ansprechpartner','Ein fester Ansprechpartner für Eigentümer für alle Themen rund um die Immobilie.']],
+ bEye:'Ihr Nutzen',bTi:'Vorteile für Vermieter',
+ bens:[['Pünktliche Mietzahlung','Vertraglich gesicherte, zuverlässige Zahlungen ohne Ausfallrisiko.'],['Ein Vertragspartner','Ein Mietvertrag, ein Ansprechpartner — keine Koordination mit mehreren Mietern.'],['Weniger Verwaltungsaufwand','Wir übernehmen die komplette Organisation des Mietverhältnisses.'],['Langfristige Belegung','Dauerhafte, stabile Belegung minimiert das Leerstandsrisiko.'],['Strukturierte Bewohnerauswahl','Geprüfte, ruhige und zuverlässige Bewohner nach klaren Kriterien.'],['Regelmäßige Kontrolle','Laufende Zustandsprüfung der Wohnung sichert den Werterhalt der Immobilie.']],
+ bRes:'Ergebnis: weniger Aufwand, mehr Sicherheit, eine langfristig stabile Vermietung.',
+ gEye:'Unsere Garantie',gTi:'Keine Party-WG — das sichern wir zu',
+ gBb:'Keine Party-WG:',gBp:'Durch klare, interne Regeln und eine sorgfältige Auswahl der Bewohner wird sichergestellt, dass die Wohnung ruhig, ordentlich und verantwortungsvoll genutzt wird. Die Einhaltung dieser Regeln wird von uns aktiv begleitet und sichergestellt.',
+ gars:[['Verbindliche Hausordnung','Schriftlich festgehaltene Regeln für jede Wohngemeinschaft.'],['Geprüfter Auswahlprozess','Persönliches Kennenlernen vor jeder Zusage.'],['Aktive Begleitung','Kontinuierliche Kontrolle statt einmaliger Übergabe.']],
+ pEye:'Auswahlkriterien',pTi:'Unser Bewohnerprofil',pSu:'Wir wählen Bewohner sorgfältig aus — ausschließlich ruhige, zuverlässige und respektvolle Personen mit langfristiger Wohnperspektive.',
+ profs:[['Studenten','Ruhig, lernorientiert und langfristig ausgerichtet.'],['Auszubildende','Diszipliniert, strukturiert und zuverlässig.'],['Berufstätige','Beruflich etabliert, stabil und verantwortungsvoll.']],
+ wEye:'Substanzschutz',wTi:'Werterhalt der Immobilie',
+ wP:'Durch die strukturierte Nutzung wird die Wohnung regelmäßig gepflegt und kontrolliert. Ein verantwortungsvoller Umgang sowie klare Abläufe sorgen für einen dauerhaft stabilen, gepflegten Zustand — und tragen so langfristig zum Werterhalt Ihrer Immobilie bei.',
+ wTag:'Wir behandeln jede Immobilie so, als wäre sie unsere eigene.',
+ werts:[['Regelmäßige Kontrolle','Laufende Zustandsprüfung durch uns als Hauptmieter.'],['Verantwortungsbewusstsein','Sorgfältiger, verantwortungsvoller Umgang mit der Immobilie.']],
+ cEye:'Nächster Schritt',cTi:'Lassen Sie uns sprechen',cP:'Gerne stellen wir unser Konzept persönlich vor und beantworten alle Fragen — unverbindlich und auf Augenhöhe.',cCta:'Kontakt aufnehmen',
+ footTag:'Strukturiertes Wohnen. Verlässliche Vermietung.'
+},
+en:{
+ nav:['Home','For landlords','For residents','Properties','Contact'],
+ hEye:'For owners & landlords',hH1:'Reliable & <em>long-term</em> renting',
+ hP:'We rent your apartment as the lead tenant and take on full responsibility — you receive predictable rental income with zero effort.',hCta:'Arrange a conversation',
+ tEye:'Basis of trust',tTi:'Why we are a reliable partner',tSu:'Security for owners comes from solid facts — not promises. These points form the foundation of our cooperation.',
+ trust:[['SCHUFA available','Creditworthiness is verified and can be shown on request.'],['Steady income','A stable, transparent income situation as the basis for punctual payments.'],['Stuttgart region','Firmly rooted locally — short distances, fast response times.'],['Long-term orientation','No short-term interest — planning security over years, not months.'],['Personally reachable','Direct contact, no call centres or waiting loops.'],['Clear responsibilities','Clearly defined duties throughout the entire tenancy.']],
+ mEye:'The model',mTi:'Our housing concept',
+ moH:'One contract. One model. Full control.',
+ moP1:'We rent apartments as the lead tenant and run them as clearly structured, calm shared homes. Every resident is carefully selected, and all use is geared towards stability and long-term living.',
+ moP2:'The result: a predictable tenancy with no coordination effort for you as the owner.',
+ moTag:'Lead-tenant model with full assumption of responsibility',
+ minis:[['We rent as lead tenant','One contract, one point of contact, full responsibility on us.'],['Target group: students, apprentices, professionals','Calm, reliable and long-term oriented residents.'],['No party flatshares','Quiet use with clear rules and a solid structure.']],
+ aEye:'Process',aTi:'How it works',aSu:'From signing to ongoing care, we take over the complete organisation and responsibility — structured in four clear steps.',
+ steps:[['Lead tenant','We act as lead tenant and take on full contractual responsibility.'],['Organisation','Complete organisation and management of the tenancy by us.'],['Resident selection','Careful, controlled selection of calm and reliable residents.'],['Point of contact','One fixed contact for owners for everything concerning the property.']],
+ bEye:'Your benefit',bTi:'Benefits for landlords',
+ bens:[['Punctual rent payment','Contractually secured, reliable payments without default risk.'],['One contract partner','One lease, one contact — no coordinating with multiple tenants.'],['Less administration','We take over the complete organisation of the tenancy.'],['Long-term occupancy','Lasting, stable occupancy minimises vacancy risk.'],['Structured resident selection','Vetted, calm and reliable residents according to clear criteria.'],['Regular inspections','Ongoing condition checks protect the value of your property.']],
+ bRes:'The result: less effort, more security, a stable long-term tenancy.',
+ gEye:'Our guarantee',gTi:'No party flatshare — we make sure of it',
+ gBb:'No party flatshare:',gBp:'Clear internal rules and careful resident selection ensure the apartment is used quietly, tidily and responsibly. We actively monitor and enforce compliance with these rules.',
+ gars:[['Binding house rules','Written rules for every shared home.'],['Vetted selection process','A personal meeting before any commitment.'],['Active supervision','Continuous oversight instead of a one-time handover.']],
+ pEye:'Selection criteria',pTi:'Our resident profile',pSu:'We select residents carefully — exclusively calm, reliable and respectful people with a long-term living perspective.',
+ profs:[['Students','Calm, study-focused and long-term oriented.'],['Apprentices','Disciplined, structured and reliable.'],['Professionals','Professionally established, stable and responsible.']],
+ wEye:'Preserving substance',wTi:'Preserving your property\u2019s value',
+ wP:'Structured use means the apartment is regularly cared for and inspected. Responsible treatment and clear routines keep it in a lastingly stable, well-kept condition — contributing to the long-term value of your property.',
+ wTag:'We treat every property as if it were our own.',
+ werts:[['Regular inspections','Ongoing condition checks by us as lead tenant.'],['Sense of responsibility','Careful, responsible treatment of the property.']],
+ cEye:'Next step',cTi:'Let\u2019s talk',cP:'We\u2019re happy to present our concept in person and answer all questions — no obligation, at eye level.',cCta:'Get in touch',
+ footTag:'Structured living. Reliable renting.'
+},
+es:{
+ nav:['Inicio','Para propietarios','Para residentes','Inmuebles','Contacto'],
+ hEye:'Para propietarios',hH1:'Alquiler fiable y a <em>largo plazo</em>',
+ hP:'Alquilamos tu piso como arrendatario principal y asumimos toda la responsabilidad — recibes ingresos previsibles sin esfuerzo.',hCta:'Concertar una conversación',
+ tEye:'Base de confianza',tTi:'Por qué somos un socio fiable',tSu:'La seguridad para los propietarios nace de hechos sólidos — no de promesas. Estos puntos forman la base de nuestra colaboración.',
+ trust:[['SCHUFA disponible','Solvencia verificada y demostrable a petición.'],['Ingresos regulares','Situación de ingresos estable y transparente como base de pagos puntuales.'],['Región de Stuttgart','Arraigados en la zona — distancias cortas, respuesta rápida.'],['Orientación a largo plazo','Sin interés cortoplacista — seguridad de planificación por años, no meses.'],['Contacto personal','Contacto directo, sin call centers ni esperas.'],['Responsabilidades claras','Competencias claramente definidas durante todo el contrato.']],
+ mEye:'El modelo',mTi:'Nuestro concepto de vivienda',
+ moH:'Un contrato. Un modelo. Control total.',
+ moP1:'Alquilamos pisos como arrendatario principal y los gestionamos como viviendas compartidas tranquilas y bien estructuradas. Cada residente se selecciona con cuidado y todo el uso se orienta a la estabilidad y a vivir a largo plazo.',
+ moP2:'El resultado: un alquiler previsible sin esfuerzo de coordinación para ti como propietario.',
+ moTag:'Modelo de arrendatario principal con plena asunción de responsabilidad',
+ minis:[['Alquilamos como arrendatario principal','Un contrato, un contacto, toda la responsabilidad en nosotros.'],['Público: estudiantes, aprendices, profesionales','Residentes tranquilos, fiables y con visión de largo plazo.'],['Sin pisos de fiesta','Uso tranquilo con reglas claras y estructura sólida.']],
+ aEye:'Proceso',aTi:'Cómo funciona',aSu:'Desde la firma hasta el cuidado continuo, asumimos toda la organización y responsabilidad — en cuatro pasos claros.',
+ steps:[['Arrendatario principal','Actuamos como arrendatario principal y asumimos toda la responsabilidad contractual.'],['Organización','Organización y gestión completa del alquiler por nuestra parte.'],['Selección de residentes','Selección cuidadosa y controlada de residentes tranquilos y fiables.'],['Persona de contacto','Un contacto fijo para el propietario para todo lo relacionado con el inmueble.']],
+ bEye:'Tu beneficio',bTi:'Ventajas para propietarios',
+ bens:[['Pago puntual del alquiler','Pagos fiables asegurados por contrato, sin riesgo de impago.'],['Un solo socio contractual','Un contrato, un contacto — sin coordinar con varios inquilinos.'],['Menos gestión','Asumimos la organización completa del alquiler.'],['Ocupación a largo plazo','Ocupación estable y duradera que minimiza el riesgo de vacantes.'],['Selección estructurada','Residentes verificados, tranquilos y fiables según criterios claros.'],['Control regular','Revisiones continuas del estado protegen el valor del inmueble.']],
+ bRes:'El resultado: menos esfuerzo, más seguridad, un alquiler estable a largo plazo.',
+ gEye:'Nuestra garantía',gTi:'Sin pisos de fiesta — lo garantizamos',
+ gBb:'Sin pisos de fiesta:',gBp:'Reglas internas claras y una selección cuidadosa de los residentes aseguran que el piso se use de forma tranquila, ordenada y responsable. Acompañamos y garantizamos activamente el cumplimiento de estas reglas.',
+ gars:[['Normas de convivencia vinculantes','Reglas por escrito para cada vivienda compartida.'],['Proceso de selección verificado','Encuentro personal antes de cualquier compromiso.'],['Acompañamiento activo','Control continuo en lugar de una entrega única.']],
+ pEye:'Criterios de selección',pTi:'Nuestro perfil de residentes',pSu:'Seleccionamos a los residentes con cuidado — exclusivamente personas tranquilas, fiables y respetuosas con perspectiva de vivienda a largo plazo.',
+ profs:[['Estudiantes','Tranquilos, centrados en el estudio y con visión de largo plazo.'],['Aprendices','Disciplinados, estructurados y fiables.'],['Profesionales','Establecidos profesionalmente, estables y responsables.']],
+ wEye:'Protección del inmueble',wTi:'Conservar el valor del inmueble',
+ wP:'El uso estructurado garantiza que el piso se cuide y revise con regularidad. Un trato responsable y procesos claros mantienen un estado estable y cuidado — contribuyendo al valor de tu inmueble a largo plazo.',
+ wTag:'Tratamos cada inmueble como si fuera nuestro.',
+ werts:[['Control regular','Revisión continua del estado por nuestra parte como arrendatario principal.'],['Sentido de responsabilidad','Trato cuidadoso y responsable del inmueble.']],
+ cEye:'Siguiente paso',cTi:'Hablemos',cP:'Con gusto presentamos nuestro concepto en persona y respondemos todas las preguntas — sin compromiso.',cCta:'Contáctanos',
+ footTag:'Vivir estructurado. Alquilar con confianza.'
+}
+};
+let CUR='de';
+function set(id,val,html){const el=document.getElementById(id);if(!el)return;if(html)el.innerHTML=val;else el.textContent=val;}
+function pairs(prefix,arr){arr.forEach((s,i)=>{set(prefix+(i+1)+'h',s[0]);set(prefix+(i+1)+'p',s[1]);});}
+function setLang(l){
+  const t=T[l];if(!t)return;CUR=l;document.documentElement.lang=l;
+  document.querySelectorAll('.lang').forEach(b=>b.classList.toggle('act',b.textContent.trim().toLowerCase()===l));
+  t.nav.forEach((v,i)=>set('nav'+i,v));
+  set('h-eye',t.hEye);set('h-h1',t.hH1,true);set('h-p',t.hP);
+  set('h-cta',t.hCta+' <span class="arw">→</span>',true);
+  set('t-eye',t.tEye);set('t-ti',t.tTi);set('t-su',t.tSu);pairs('t',t.trust);
+  set('m-eye',t.mEye);set('m-ti',t.mTi);
+  set('mo-h',t.moH);set('mo-p1',t.moP1);set('mo-p2',t.moP2);set('mo-tag',t.moTag);
+  pairs('mm',t.minis);
+  set('a-eye',t.aEye);set('a-ti',t.aTi);set('a-su',t.aSu);pairs('s',t.steps);
+  set('b-eye',t.bEye);set('b-ti',t.bTi);pairs('b',t.bens);set('b-res',t.bRes);
+  set('g-eye',t.gEye);set('g-ti',t.gTi);set('g-bb',t.gBb);set('g-bp',t.gBp);pairs('g',t.gars);
+  set('p-eye',t.pEye);set('p-ti',t.pTi);set('p-su',t.pSu);pairs('pr',t.profs);
+  set('w-eye',t.wEye);set('w-ti',t.wTi);set('w-p',t.wP);set('w-tag',t.wTag);pairs('w',t.werts);
+  set('c-eye',t.cEye);set('c-ti',t.cTi);set('c-p',t.cP);
+  set('c-cta',t.cCta+' <span class="arw">→</span>',true);
+  set('foot-tag',t.footTag);
+}
+document.getElementById('navToggle').addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.toggle('open');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LF Simplify — Wohnraum-Management Region Stuttgart</title>
+<meta name="description" content="LF Simplify mietet Wohnungen als Hauptmieter an und führt sie als ruhige, strukturierte Wohngemeinschaften — sicher für Eigentümer, verlässlich für Bewohner. Region Stuttgart.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LF</span>
+      <span class="brand-name">LF <span>Simplify</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="current" id="nav0">Startseite</a>
+      <a href="vermieter.html" id="nav1">Für Vermieter</a>
+      <a href="mieter.html" id="nav2">Für Bewohner</a>
+      <a href="objekte.html" id="nav3">Objekte</a>
+      <a href="#kontakt" id="nav4">Kontakt</a>
+      <div class="nav-sep"></div>
+      <div class="langs">
+        <button class="lang act" onclick="setLang('de')">DE</button>
+        <button class="lang" onclick="setLang('en')">EN</button>
+        <button class="lang" onclick="setLang('es')">ES</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow hero-eye" id="h-eye">Wohnraum-Management · Region Stuttgart</div>
+      <h1 class="h-serif" id="h-h1">Vermieten ohne Aufwand.<br><em>Wohnen</em> mit Struktur.</h1>
+      <p class="hero-p" id="h-p">Wir mieten Wohnungen als Hauptmieter an und führen sie als ruhige, sorgfältig organisierte Wohngemeinschaften — sicher für Eigentümer, verlässlich für Bewohner.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-gold" id="h-cta1">Kontakt aufnehmen <span class="arw">→</span></a>
+        <a href="vermieter.html" class="btn btn-light" id="h-cta2">Für Vermieter</a>
+      </div>
+    </div>
+    <div class="grid-motif" id="motif" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ MODEL ============ -->
+<section class="section" id="modell">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow center" id="m-eye">Das Modell</div>
+      <h2 class="section-title" id="m-ti">Ein Vertrag. Ein Ansprechpartner.<br>Volle Verantwortung bei uns.</h2>
+      <p class="section-sub" id="m-su">Wir mieten Wohnungen langfristig als Hauptmieter an und übernehmen die komplette Organisation — von der Auswahl ruhiger, zuverlässiger Bewohner bis zur laufenden Betreuung. Für Eigentümer bedeutet das planbare Mieteinnahmen ohne Koordinationsaufwand.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORK ============ -->
+<section class="section" id="wege" style="background:var(--cream-2);padding-top:84px;padding-bottom:96px">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow center" id="f-eye">Wie können wir helfen?</div>
+      <h2 class="section-title" id="f-ti">Wählen Sie Ihren Weg</h2>
+    </div>
+    <div class="fork">
+      <a href="vermieter.html" class="fork-card">
+        <span class="fork-label" id="fa-lb">Für Vermieter</span>
+        <h3 id="fa-h">Sie besitzen eine Wohnung</h3>
+        <p id="fa-p">Wir mieten langfristig, zahlen zuverlässig und kümmern uns um alles. Weniger Verwaltung, weniger Leerstand, mehr Sicherheit für Eigentümer.</p>
+        <span class="fork-link" id="fa-lk">Für Vermieter <span class="arw">→</span></span>
+      </a>
+      <a href="mieter.html" class="fork-card fork-navy">
+        <span class="fork-label" id="fb-lb">Für Bewohner</span>
+        <h3 id="fb-h">Sie suchen ein Zimmer</h3>
+        <p id="fb-p">Ruhige, gepflegte Wohngemeinschaften für Studenten, Auszubildende und Berufstätige in der Region Stuttgart.</p>
+        <span class="fork-link" id="fb-lk">Für Bewohner <span class="arw">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="section" id="blick" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow center" id="s-eye">Auf einen Blick</div>
+      <h2 class="section-title" id="s-ti">Ein einfaches, sicheres Konzept</h2>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">1</div>
+        <div class="stat-label" id="st1l">Ansprechpartner</div>
+        <div class="stat-note" id="st1n">Ein Vertrag, ein Kontakt — kein Koordinationsaufwand.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label" id="st2l">Organisation durch uns</div>
+        <div class="stat-note" id="st2n">Vollständige Verwaltung des Mietverhältnisses.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" style="font-size:26px;padding-top:6px" id="st3num">Stuttgart</div>
+        <div class="stat-label" id="st3l">Einsatzgebiet</div>
+        <div class="stat-note" id="st3n">Fest verwurzelt vor Ort — kurze Wege, schnelle Reaktion.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT (navy — the people) ============ -->
+<section class="section section-navy" id="ueber-uns">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow center" id="u-eye">Über uns</div>
+      <h2 class="section-title" id="u-ti">Zwei Menschen. Ein Konzept.</h2>
+      <p class="section-sub" id="u-su">Wir sind Fernando und Lidija aus dem Raum Stuttgart / Esslingen — strukturiert, verlässlich und gewohnt, Verantwortung zu übernehmen.</p>
+    </div>
+    <div class="people">
+      <div class="person">
+        <div class="person-ava">F</div>
+        <h3>Fernando Omorodion</h3>
+        <div class="person-role" id="p1-role">Gründer · Raum Stuttgart</div>
+        <p id="p1-bio">Selbstständiger Übersetzer, u. a. im Auftrag des BAMF. Baut den Immobilienbereich langfristig zur hauptberuflichen Tätigkeit aus — verlässlich, kommunikativ, langfristig orientiert.</p>
+        <div class="chips" id="p1-chips">
+          <span class="chip">Deutsch</span><span class="chip">Englisch</span><span class="chip">Spanisch</span>
+        </div>
+      </div>
+      <div class="person">
+        <div class="person-ava">L</div>
+        <h3>Lidija Ilieva</h3>
+        <div class="person-role" id="p2-role">Gründerin · Raum Esslingen</div>
+        <p id="p2-bio">Studiert IT-Sicherheit (B.Eng.) an der Hochschule Esslingen. Strukturiert, sorgfältig und gewohnt an eigenverantwortliches Arbeiten — bei LF Simplify verantwortlich für Organisation und Abläufe.</p>
+        <div class="chips" id="p2-chips">
+          <span class="chip">Deutsch</span><span class="chip">Englisch</span><span class="chip">Spanisch</span><span class="chip">Mazedonisch</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="kontakt">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="eyebrow" id="c-eye">Kontakt</div>
+        <h2 id="c-ti">Lassen Sie uns sprechen</h2>
+        <p class="contact-sub" id="c-su">Gerne stellen wir unser Konzept persönlich vor und beantworten alle Fragen.</p>
+
+        <div class="cinfo">
+          <div class="cinfo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div><div class="cinfo-label" id="ci1l">Ansprechpartner</div><div class="cinfo-val">Fernando Omorodion &amp; Lidija Ilieva</div></div>
+        </div>
+        <div class="cinfo">
+          <div class="cinfo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></div>
+          <div><div class="cinfo-label" id="ci2l">Telefon</div><div class="cinfo-val">+49 160 7796311 · +49 176 41109592</div></div>
+        </div>
+        <div class="cinfo">
+          <div class="cinfo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+          <div><div class="cinfo-label" id="ci3l">E-Mail</div><div class="cinfo-val">info@lf-simplify.com</div></div>
+        </div>
+        <div class="cinfo">
+          <div class="cinfo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="cinfo-label" id="ci4l">Einsatzgebiet</div><div class="cinfo-val" id="ci4v">Stuttgart und Umgebung</div></div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <div id="cform">
+          <div class="field"><label id="lb1" for="fi-name">Name</label><input id="fi-name" type="text"></div>
+          <div class="field"><label id="lb2" for="fi-email">E-Mail</label><input id="fi-email" type="email"></div>
+          <div class="field"><label id="lb3" for="fi-phone">Telefon (optional)</label><input id="fi-phone" type="tel"></div>
+          <div class="field"><label id="lb4" for="fi-msg">Ihre Nachricht</label><textarea id="fi-msg"></textarea></div>
+          <button class="btn btn-gold" id="sub-btn" onclick="doSubmit()" style="width:100%;justify-content:center">Nachricht senden</button>
+        </div>
+        <div class="form-ok" id="fok">
+          <div class="ok-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3 id="ok-h">Nachricht gesendet</h3>
+          <p id="ok-p">Wir melden uns so bald wie möglich bei Ihnen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">LF <span>Simplify</span> <small style="color:rgba(255,255,255,.4)">· Wohnraum-Management Region Stuttgart</small></div>
+    <div class="footer-tag" id="foot-tag">Strukturiertes Wohnen. Verlässliche Vermietung.</div>
+  </div>
+</footer>
+
+<script>
+/* ---------- language table (homepage only, for now) ---------- */
+const T={
+  de:{
+    nav:['Startseite','Für Vermieter','Für Bewohner','Objekte','Kontakt'],
+    hEye:'Wohnraum-Management · Region Stuttgart',
+    hH1:'Vermieten ohne Aufwand.<br><em>Wohnen</em> mit Struktur.',
+    hP:'Wir mieten Wohnungen als Hauptmieter an und führen sie als ruhige, sorgfältig organisierte Wohngemeinschaften — sicher für Eigentümer, verlässlich für Bewohner.',
+    hCta1:'Kontakt aufnehmen',hCta2:'Für Vermieter',
+    mEye:'Das Modell',mTi:'Ein Vertrag. Ein Ansprechpartner.<br>Volle Verantwortung bei uns.',
+    mSu:'Wir mieten Wohnungen langfristig als Hauptmieter an und übernehmen die komplette Organisation — von der Auswahl ruhiger, zuverlässiger Bewohner bis zur laufenden Betreuung. Für Eigentümer bedeutet das planbare Mieteinnahmen ohne Koordinationsaufwand.',
+    fEye:'Wie können wir helfen?',fTi:'Wählen Sie Ihren Weg',
+    faLb:'Für Vermieter',faH:'Sie besitzen eine Wohnung',faP:'Wir mieten langfristig, zahlen zuverlässig und kümmern uns um alles. Weniger Verwaltung, weniger Leerstand, mehr Sicherheit für Eigentümer.',faLk:'Für Vermieter',
+    fbLb:'Für Bewohner',fbH:'Sie suchen ein Zimmer',fbP:'Ruhige, gepflegte Wohngemeinschaften für Studenten, Auszubildende und Berufstätige in der Region Stuttgart.',fbLk:'Für Bewohner',
+    uEye:'Über uns',uTi:'Zwei Menschen. Ein Konzept.',
+    uSu:'Wir sind Fernando und Lidija aus dem Raum Stuttgart / Esslingen — strukturiert, verlässlich und gewohnt, Verantwortung zu übernehmen.',
+    p1Role:'Gründer · Raum Stuttgart',p1Bio:'Selbstständiger Übersetzer, u. a. im Auftrag des BAMF. Baut den Immobilienbereich langfristig zur hauptberuflichen Tätigkeit aus — verlässlich, kommunikativ, langfristig orientiert.',
+    p2Role:'Gründerin · Raum Esslingen',p2Bio:'Studiert IT-Sicherheit (B.Eng.) an der Hochschule Esslingen. Strukturiert, sorgfältig und gewohnt an eigenverantwortliches Arbeiten — bei LF Simplify verantwortlich für Organisation und Abläufe.',
+    p1Chips:['Deutsch','Englisch','Spanisch'],p2Chips:['Deutsch','Englisch','Spanisch','Mazedonisch'],
+    sEye:'Auf einen Blick',sTi:'Ein einfaches, sicheres Konzept',
+    st1l:'Ansprechpartner',st1n:'Ein Vertrag, ein Kontakt — kein Koordinationsaufwand.',
+    st2l:'Organisation durch uns',st2n:'Vollständige Verwaltung des Mietverhältnisses.',
+    st3num:'Stuttgart',st3l:'Einsatzgebiet',st3n:'Fest verwurzelt vor Ort — kurze Wege, schnelle Reaktion.',
+    cEye:'Kontakt',cTi:'Lassen Sie uns sprechen',cSu:'Gerne stellen wir unser Konzept persönlich vor und beantworten alle Fragen.',
+    ci1l:'Ansprechpartner',ci2l:'Telefon',ci3l:'E-Mail',ci4l:'Einsatzgebiet',ci4v:'Stuttgart und Umgebung',
+    lbs:['Name','E-Mail','Telefon (optional)','Ihre Nachricht'],sub:'Nachricht senden',
+    okH:'Nachricht gesendet',okP:'Wir melden uns so bald wie möglich bei Ihnen.',
+    footTag:'Strukturiertes Wohnen. Verlässliche Vermietung.',
+    alertMsg:'Bitte Name, E-Mail und Nachricht ausfüllen.'
+  },
+  en:{
+    nav:['Home','For landlords','For residents','Properties','Contact'],
+    hEye:'Housing management · Stuttgart region',
+    hH1:'Renting, without the hassle.<br><em>Living</em>, with structure.',
+    hP:'We rent apartments as the lead tenant and run them as calm, carefully organised shared homes — secure for owners, reliable for residents.',
+    hCta1:'Get in touch',hCta2:'For landlords',
+    mEye:'The model',mTi:'One contract. One point of contact.<br>Full responsibility on us.',
+    mSu:'We rent apartments long-term as the lead tenant and take over the entire organisation — from selecting calm, reliable residents to ongoing care. For owners, that means predictable rental income with no coordination effort.',
+    fEye:'How can we help?',fTi:'Choose your path',
+    faLb:'For landlords',faH:'You own an apartment',faP:'We rent long-term, pay reliably and take care of everything. Less admin, less vacancy, more security for owners.',faLk:'For landlords',
+    fbLb:'For residents',fbH:'You are looking for a room',fbP:'Calm, well-kept shared homes for students, apprentices and working professionals in the Stuttgart region.',fbLk:'For residents',
+    uEye:'About us',uTi:'Two people. One concept.',
+    uSu:'We are Fernando and Lidija from the Stuttgart / Esslingen area — structured, reliable and used to taking responsibility.',
+    p1Role:'Founder · Stuttgart area',p1Bio:'Freelance translator, working among others for the BAMF. Building up real estate as his long-term main profession — reliable, communicative, long-term minded.',
+    p2Role:'Founder · Esslingen area',p2Bio:'Studies IT security (B.Eng.) at Esslingen University. Structured, careful and used to working independently — responsible for organisation and processes at LF Simplify.',
+    p1Chips:['German','English','Spanish'],p2Chips:['German','English','Spanish','Macedonian'],
+    sEye:'At a glance',sTi:'A simple, secure concept',
+    st1l:'Point of contact',st1n:'One contract, one contact — no coordination effort.',
+    st2l:'Organised by us',st2n:'Complete management of the tenancy.',
+    st3num:'Stuttgart',st3l:'Service area',st3n:'Firmly rooted locally — short distances, fast responses.',
+    cEye:'Contact',cTi:'Let\u2019s talk',cSu:'We\u2019re happy to present our concept in person and answer any questions.',
+    ci1l:'Contact',ci2l:'Phone',ci3l:'Email',ci4l:'Service area',ci4v:'Stuttgart and surroundings',
+    lbs:['Name','Email','Phone (optional)','Your message'],sub:'Send message',
+    okH:'Message sent',okP:'We\u2019ll get back to you as soon as possible.',
+    footTag:'Structured living. Reliable renting.',
+    alertMsg:'Please fill in name, email and your message.'
+  },
+  es:{
+    nav:['Inicio','Para propietarios','Para residentes','Inmuebles','Contacto'],
+    hEye:'Gestión de viviendas · Región de Stuttgart',
+    hH1:'Alquilar sin complicaciones.<br><em>Vivir</em> con estructura.',
+    hP:'Alquilamos pisos como arrendatario principal y los gestionamos como viviendas compartidas tranquilas y bien organizadas — seguro para propietarios, fiable para residentes.',
+    hCta1:'Contáctanos',hCta2:'Para propietarios',
+    mEye:'El modelo',mTi:'Un contrato. Un contacto.<br>Toda la responsabilidad en nosotros.',
+    mSu:'Alquilamos pisos a largo plazo como arrendatario principal y asumimos toda la organización — desde la selección de residentes tranquilos y fiables hasta el cuidado continuo. Para los propietarios, ingresos previsibles sin esfuerzo de coordinación.',
+    fEye:'¿Cómo podemos ayudar?',fTi:'Elige tu camino',
+    faLb:'Para propietarios',faH:'Tienes un piso',faP:'Alquilamos a largo plazo, pagamos de forma fiable y nos ocupamos de todo. Menos gestión, menos vacantes, más seguridad.',faLk:'Para propietarios',
+    fbLb:'Para residentes',fbH:'Buscas una habitación',fbP:'Viviendas compartidas tranquilas y cuidadas para estudiantes, aprendices y profesionales en la región de Stuttgart.',fbLk:'Para residentes',
+    uEye:'Sobre nosotros',uTi:'Dos personas. Un concepto.',
+    uSu:'Somos Fernando y Lidija, de la zona de Stuttgart / Esslingen — estructurados, fiables y acostumbrados a asumir responsabilidad.',
+    p1Role:'Fundador · Zona de Stuttgart',p1Bio:'Traductor autónomo, entre otros para el BAMF. Desarrolla el sector inmobiliario como su profesión principal a largo plazo — fiable, comunicativo y con visión de futuro.',
+    p2Role:'Fundadora · Zona de Esslingen',p2Bio:'Estudia seguridad informática (B.Eng.) en la Universidad de Esslingen. Estructurada, cuidadosa y acostumbrada a trabajar de forma independiente — responsable de la organización en LF Simplify.',
+    p1Chips:['Alemán','Inglés','Español'],p2Chips:['Alemán','Inglés','Español','Macedonio'],
+    sEye:'De un vistazo',sTi:'Un concepto simple y seguro',
+    st1l:'Contacto',st1n:'Un contrato, un contacto — sin esfuerzo de coordinación.',
+    st2l:'Organizado por nosotros',st2n:'Gestión completa del contrato de alquiler.',
+    st3num:'Stuttgart',st3l:'Zona de servicio',st3n:'Arraigados en la zona — distancias cortas, respuesta rápida.',
+    cEye:'Contacto',cTi:'Hablemos',cSu:'Con gusto presentamos nuestro concepto en persona y respondemos todas las preguntas.',
+    ci1l:'Contacto',ci2l:'Teléfono',ci3l:'Email',ci4l:'Zona de servicio',ci4v:'Stuttgart y alrededores',
+    lbs:['Nombre','Email','Teléfono (opcional)','Tu mensaje'],sub:'Enviar mensaje',
+    okH:'Mensaje enviado',okP:'Te responderemos lo antes posible.',
+    footTag:'Vivir estructurado. Alquilar con confianza.',
+    alertMsg:'Por favor, completa nombre, email y tu mensaje.'
+  }
+};
+let CUR='de';
+
+function set(id,val,html){const el=document.getElementById(id);if(!el)return;if(html)el.innerHTML=val;else el.textContent=val;}
+
+function setLang(l){
+  const t=T[l];if(!t)return;CUR=l;
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lang').forEach(b=>b.classList.toggle('act',b.textContent.trim().toLowerCase()===l));
+  t.nav.forEach((v,i)=>set('nav'+i,v));
+  set('h-eye',t.hEye);set('h-h1',t.hH1,true);set('h-p',t.hP);
+  set('h-cta1',t.hCta1+' <span class="arw">→</span>',true);set('h-cta2',t.hCta2);
+  set('m-eye',t.mEye);set('m-ti',t.mTi,true);set('m-su',t.mSu);
+  set('f-eye',t.fEye);set('f-ti',t.fTi);
+  set('fa-lb',t.faLb);set('fa-h',t.faH);set('fa-p',t.faP);set('fa-lk',t.faLk+' <span class="arw">→</span>',true);
+  set('fb-lb',t.fbLb);set('fb-h',t.fbH);set('fb-p',t.fbP);set('fb-lk',t.fbLk+' <span class="arw">→</span>',true);
+  set('s-eye',t.sEye);set('s-ti',t.sTi);
+  set('st1l',t.st1l);set('st1n',t.st1n);set('st2l',t.st2l);set('st2n',t.st2n);
+  set('st3num',t.st3num);set('st3l',t.st3l);set('st3n',t.st3n);
+  set('u-eye',t.uEye);set('u-ti',t.uTi);set('u-su',t.uSu);
+  set('p1-role',t.p1Role);set('p1-bio',t.p1Bio);set('p2-role',t.p2Role);set('p2-bio',t.p2Bio);
+  document.getElementById('p1-chips').innerHTML=t.p1Chips.map(c=>`<span class="chip">${c}</span>`).join('');
+  document.getElementById('p2-chips').innerHTML=t.p2Chips.map(c=>`<span class="chip">${c}</span>`).join('');
+  set('c-eye',t.cEye);set('c-ti',t.cTi);set('c-su',t.cSu);
+  set('ci1l',t.ci1l);set('ci2l',t.ci2l);set('ci3l',t.ci3l);set('ci4l',t.ci4l);set('ci4v',t.ci4v);
+  t.lbs.forEach((v,i)=>set('lb'+(i+1),v));
+  set('sub-btn',t.sub);set('ok-h',t.okH);set('ok-p',t.okP);set('foot-tag',t.footTag);
+}
+
+/* ---------- contact form (placeholder — real email comes later via EmailJS) ---------- */
+function doSubmit(){
+  const n=document.getElementById('fi-name').value.trim();
+  const e=document.getElementById('fi-email').value.trim();
+  const m=document.getElementById('fi-msg').value.trim();
+  if(!n||!e||!m){alert(T[CUR].alertMsg);return;}
+  document.getElementById('cform').style.display='none';
+  document.getElementById('fok').style.display='block';
+}
+
+/* ---------- mobile nav ---------- */
+document.getElementById('navToggle').addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.remove('open');
+}));
+
+/* ---------- build the grid-of-squares signature ---------- */
+(function(){
+  const m=document.getElementById('motif');if(!m)return;
+  const gold=new Set([2,5,9,14]); // a few lit tiles
+  for(let i=0;i<16;i++){
+    const s=document.createElement('i');
+    if(gold.has(i))s.classList.add('on');
+    s.style.animationDelay=(i*0.04)+'s';
+    m.appendChild(s);
+  }
+})();
+</script>
+</body>
+</html>
