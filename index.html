@@ -175,7 +175,10 @@
           <div class="field"><label id="lb2" for="fi-email">E-Mail</label><input id="fi-email" type="email"></div>
           <div class="field"><label id="lb3" for="fi-phone">Telefon (optional)</label><input id="fi-phone" type="tel"></div>
           <div class="field"><label id="lb4" for="fi-msg">Ihre Nachricht</label><textarea id="fi-msg"></textarea></div>
+          <input type="text" id="fi-company" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
           <button class="btn btn-gold" id="sub-btn" onclick="doSubmit()" style="width:100%;justify-content:center">Nachricht senden</button>
+          <p id="form-privacy" style="margin-top:12px;font-size:12px;color:var(--muted);font-weight:300;line-height:1.5">Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben zur Bearbeitung Ihrer Anfrage verwenden. Weitere Informationen in unserer <a href="datenschutz.html" style="color:var(--gold);text-decoration:underline">Datenschutzerklärung</a>.</p>
+          <div id="form-error" style="display:none;margin-top:12px;padding:12px 14px;background:#fdf0f0;border:1px solid #e5b4b4;border-radius:6px;font-size:13.5px;color:#8a3b3b"></div>
         </div>
         <div class="form-ok" id="fok">
           <div class="ok-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></div>
@@ -192,6 +195,10 @@
   <div class="footer-inner">
     <div class="footer-brand">LF <span>Simplify</span> <small style="color:rgba(255,255,255,.4)">· Wohnraum-Management Region Stuttgart</small></div>
     <div class="footer-tag" id="foot-tag">Strukturiertes Wohnen. Verlässliche Vermietung.</div>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
   </div>
 </footer>
 
@@ -221,9 +228,9 @@ const T={
     cEye:'Kontakt',cTi:'Lassen Sie uns sprechen',cSu:'Gerne stellen wir unser Konzept persönlich vor und beantworten alle Fragen.',
     ci1l:'Ansprechpartner',ci2l:'Telefon',ci3l:'E-Mail',ci4l:'Einsatzgebiet',ci4v:'Stuttgart und Umgebung',
     lbs:['Name','E-Mail','Telefon (optional)','Ihre Nachricht'],sub:'Nachricht senden',
-    okH:'Nachricht gesendet',okP:'Wir melden uns so bald wie möglich bei Ihnen.',
+    okH:'Nachricht gesendet',okP:'Vielen Dank! Wir melden uns so bald wie möglich bei Ihnen.',
     footTag:'Strukturiertes Wohnen. Verlässliche Vermietung.',
-    alertMsg:'Bitte Name, E-Mail und Nachricht ausfüllen.'
+    alertMsg:'Bitte Name, E-Mail und Nachricht ausfüllen.',privacy:'Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben zur Bearbeitung Ihrer Anfrage verwenden. Weitere Informationen in unserer <a href=\"datenschutz.html\" style=\"color:var(--gold);text-decoration:underline\">Datenschutzerklärung</a>.',sending:'Wird gesendet …',errorMsg:'Das Senden hat leider nicht geklappt. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an'
   },
   en:{
     nav:['Home','For landlords','For residents','Properties','Contact'],
@@ -248,9 +255,9 @@ const T={
     cEye:'Contact',cTi:'Let\u2019s talk',cSu:'We\u2019re happy to present our concept in person and answer any questions.',
     ci1l:'Contact',ci2l:'Phone',ci3l:'Email',ci4l:'Service area',ci4v:'Stuttgart and surroundings',
     lbs:['Name','Email','Phone (optional)','Your message'],sub:'Send message',
-    okH:'Message sent',okP:'We\u2019ll get back to you as soon as possible.',
+    okH:'Message sent',okP:'Thank you! We\u2019ll get back to you as soon as possible.',
     footTag:'Structured living. Reliable renting.',
-    alertMsg:'Please fill in name, email and your message.'
+    alertMsg:'Please fill in name, email and your message.',privacy:'By submitting you agree that we may use your details to handle your enquiry. More in our <a href=\"datenschutz.html\" style=\"color:var(--gold);text-decoration:underline\">privacy policy</a>.',sending:'Sending …',errorMsg:'Sending failed. Please try again or write to us directly at'
   },
   es:{
     nav:['Inicio','Para propietarios','Para residentes','Inmuebles','Contacto'],
@@ -275,9 +282,9 @@ const T={
     cEye:'Contacto',cTi:'Hablemos',cSu:'Con gusto presentamos nuestro concepto en persona y respondemos todas las preguntas.',
     ci1l:'Contacto',ci2l:'Teléfono',ci3l:'Email',ci4l:'Zona de servicio',ci4v:'Stuttgart y alrededores',
     lbs:['Nombre','Email','Teléfono (opcional)','Tu mensaje'],sub:'Enviar mensaje',
-    okH:'Mensaje enviado',okP:'Te responderemos lo antes posible.',
+    okH:'Mensaje enviado',okP:'¡Gracias! Te responderemos lo antes posible.',
     footTag:'Vivir estructurado. Alquilar con confianza.',
-    alertMsg:'Por favor, completa nombre, email y tu mensaje.'
+    alertMsg:'Por favor, completa nombre, email y tu mensaje.',privacy:'Al enviar aceptas que usemos tus datos para tramitar tu consulta. Más información en nuestra <a href=\"datenschutz.html\" style=\"color:var(--gold);text-decoration:underline\">política de privacidad</a>.',sending:'Enviando …',errorMsg:'No se pudo enviar. Inténtalo de nuevo o escríbenos directamente a'
   }
 };
 let CUR='de';
@@ -305,17 +312,51 @@ function setLang(l){
   set('c-eye',t.cEye);set('c-ti',t.cTi);set('c-su',t.cSu);
   set('ci1l',t.ci1l);set('ci2l',t.ci2l);set('ci3l',t.ci3l);set('ci4l',t.ci4l);set('ci4v',t.ci4v);
   t.lbs.forEach((v,i)=>set('lb'+(i+1),v));
-  set('sub-btn',t.sub);set('ok-h',t.okH);set('ok-p',t.okP);set('foot-tag',t.footTag);
+  set('sub-btn',t.sub);document.getElementById('form-privacy').innerHTML=t.privacy;set('ok-h',t.okH);set('ok-p',t.okP);set('foot-tag',t.footTag);
 }
 
-/* ---------- contact form (placeholder — real email comes later via EmailJS) ---------- */
-function doSubmit(){
+/* ================= KONTAKTFORMULAR =================
+   Versand über SimplyForms (EU-gehostet, speichert nichts).
+   >>> HIER die eigene Endpoint-URL eintragen: <<< */
+const FORM_ENDPOINT = 'https://api.simplyforms.app/f/DEINE-FORM-ID';
+
+async function doSubmit(){
   const n=document.getElementById('fi-name').value.trim();
   const e=document.getElementById('fi-email').value.trim();
+  const p=document.getElementById('fi-phone').value.trim();
   const m=document.getElementById('fi-msg').value.trim();
-  if(!n||!e||!m){alert(T[CUR].alertMsg);return;}
-  document.getElementById('cform').style.display='none';
-  document.getElementById('fok').style.display='block';
+  const trap=document.getElementById('fi-company').value;
+  const t=T[CUR];
+
+  if(!n||!e||!m){alert(t.alertMsg);return;}
+  if(trap){return;}                       // Spam-Bot: still verwerfen
+
+  const btn=document.getElementById('sub-btn');
+  const err=document.getElementById('form-error');
+  err.style.display='none';
+  btn.disabled=true;
+  btn.textContent=t.sending;
+
+  try{
+    const res = await fetch(FORM_ENDPOINT,{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify({
+        name:n, email:e, phone:p, message:m,
+        _subject:'Anfrage über lf-simplify.com — '+n,
+        _language:CUR
+      })
+    });
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    document.getElementById('cform').style.display='none';
+    document.getElementById('fok').style.display='block';
+  }catch(ex){
+    btn.disabled=false;
+    btn.textContent=t.sub;
+    err.innerHTML = t.errorMsg +
+      ' <a href="mailto:info@lf-simplify.com" style="color:#8a3b3b;text-decoration:underline">info@lf-simplify.com</a>';
+    err.style.display='block';
+  }
 }
 
 /* ---------- mobile nav ---------- */
