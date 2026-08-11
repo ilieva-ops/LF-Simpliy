@@ -111,7 +111,7 @@
   </div>
 </section>
 
-<!-- ============ ABOUT (navy — the people) ============ -->
+<!-- ============ ABOUT ============ -->
 <section class="section section-navy" id="ueber-uns">
   <div class="wrap">
     <div class="section-head center">
@@ -315,10 +315,8 @@ function setLang(l){
   set('sub-btn',t.sub);document.getElementById('form-privacy').innerHTML=t.privacy;set('ok-h',t.okH);set('ok-p',t.okP);set('foot-tag',t.footTag);
 }
 
-/* ================= KONTAKTFORMULAR =================
-   Versand über SimplyForms (EU-gehostet, speichert nichts).
-   >>> HIER die eigene Endpoint-URL eintragen: <<< */
-const FORM_ENDPOINT = 'https://api.simplyforms.app/f/DEINE-FORM-ID';
+/* ================= KONTAKTFORMULAR ================= */
+const FORM_ENDPOINT = 'https://api.simplyforms.app/v1/forms/uu-GlqQ1_FTQFp-zVc_oLw';
 
 async function doSubmit(){
   const n=document.getElementById('fi-name').value.trim();
@@ -329,7 +327,7 @@ async function doSubmit(){
   const t=T[CUR];
 
   if(!n||!e||!m){alert(t.alertMsg);return;}
-  if(trap){return;}                       // Spam-Bot: still verwerfen
+  if(trap){return;}                       // Spam
 
   const btn=document.getElementById('sub-btn');
   const err=document.getElementById('form-error');
