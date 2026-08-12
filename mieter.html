@@ -4,11 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Für Bewohner — LF Simplify</title>
-<meta name="description" content="Ruhige, gepflegte WG-Zimmer für Studenten, Auszubildende und Berufstätige in der Region Stuttgart — bald verfügbar.">
+<meta name="description" content="Möblierte WG-Zimmer für Studierende, Azubis und Berufstätige in der Region Stuttgart — ruhig, strukturiert, verlässlich.">
 <link rel="stylesheet" href="styles.css">
+<style>
+.page-hero.navy .h-serif em {
+  font-style:italic;
+  color:rgba(255,255,255,.38);
+  text-decoration:line-through;
+  text-decoration-color:var(--gold-2);
+  text-decoration-thickness:2.5px;
+}
+</style>
 </head>
 <body>
-
+ 
+<!-- ============ NAV ============ -->
 <header class="nav">
   <div class="nav-inner">
     <a class="brand" href="index.html">
@@ -31,51 +41,325 @@
     </nav>
   </div>
 </header>
-
-<section class="soon on-navy">
-  <div class="soon-inner">
-    <div class="grid-motif" id="motif" aria-hidden="true"></div>
-    <div class="eyebrow center" style="color:var(--gold-2)" id="s-eye">Für Bewohner</div>
-    <h1 class="h-serif" id="s-h1">Dein Zimmer ist <em>bald</em> hier.</h1>
-    <p id="s-p">Ruhige, gepflegte WG-Zimmer für Studenten, Auszubildende und Berufstätige in der Region Stuttgart — wir bereiten gerade unsere ersten Wohnungen vor. Schreib uns schon jetzt, und wir melden uns, sobald etwas frei ist.</p>
-    <div class="soon-actions">
-      <a href="index.html#kontakt" class="btn btn-gold" id="s-cta1">Interesse melden <span class="arw">→</span></a>
-      <a href="index.html" class="btn btn-light" id="s-cta2">Zur Startseite</a>
+ 
+<!-- ============ HERO ============ -->
+<section class="page-hero navy">
+  <div class="page-hero-inner">
+    <div class="eyebrow" style="color:var(--gold-2)" id="h-eye">Für Bewohner</div>
+    <h1 class="h-serif" id="h-h1">Wohnen ohne <em>Kopfschmerzen.</em></h1>
+    <p class="lead" id="h-p">Möblierte Zimmer in ruhigen, sorgfältig organisierten Wohngemeinschaften — für Studierende, Azubis und Berufstätige in der Region Stuttgart.</p>
+    <div class="hero-actions">
+      <a href="index.html#kontakt" class="btn btn-gold" id="h-cta1">Interesse melden <span class="arw">→</span></a>
+      <a href="objekte.html" class="btn btn-light" id="h-cta2">Zu den Objekten</a>
     </div>
   </div>
 </section>
-
+ 
+<!-- ============ WAS DICH ERWARTET ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow center" id="w-eye">Was dich erwartet</div>
+      <h2 class="section-title" id="w-ti">Zimmer, die wirklich funktionieren</h2>
+      <p class="section-sub" id="w-su">Kein Stress mit Möbelkauf oder schwierigen Mitbewohnern. Einfach einziehen und ankommen.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h3 id="f1h">Möbliert &amp; bezugsfertig</h3>
+        <p id="f1p">Vollständig ausgestattete Zimmer — du bringst nur deine Koffer mit.</p>
+      </div>
+      <div class="card">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+            <path d="M14 2v6h6"/><path d="M9 15h6M9 11h4"/>
+          </svg>
+        </div>
+        <h3 id="f2h">Faire Konditionen</h3>
+        <p id="f2p">Transparente Mietbedingungen ohne versteckte Kosten oder Überraschungen.</p>
+      </div>
+      <div class="card">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3 id="f3h">Ruhige Atmosphäre</h3>
+        <p id="f3p">Sorgfältig ausgewählte Mitbewohner und klare Regeln für ein angenehmes Miteinander.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ FÜR WEN ============ -->
+<section class="section section-navy">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow center" id="p-eye">Für wen</div>
+      <h2 class="section-title" id="p-ti">Unsere Bewohner</h2>
+      <p class="section-sub" id="p-su">Wir vermieten ausschließlich an ruhige, verlässliche Personen — mit dem Ziel, langfristig stabile Wohngemeinschaften zu schaffen.</p>
+    </div>
+    <div class="grid-3">
+      <div class="person" style="text-align:center">
+        <div class="person-ava" style="margin:0 auto 18px">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M22 10 12 5 2 10l10 5 10-5Z"/>
+            <path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/>
+          </svg>
+        </div>
+        <h3 id="pr1h">Studierende</h3>
+        <p style="margin-bottom:0" id="pr1p">Lernorientiert, ruhig, mit stabilem Wohnbedarf während des Studiums.</p>
+      </div>
+      <div class="person" style="text-align:center">
+        <div class="person-ava" style="margin:0 auto 18px">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/>
+          </svg>
+        </div>
+        <h3 id="pr2h">Auszubildende</h3>
+        <p style="margin-bottom:0" id="pr2p">Zuverlässig, strukturiert und auf der Suche nach einem stabilen Zuhause.</p>
+      </div>
+      <div class="person" style="text-align:center">
+        <div class="person-ava" style="margin:0 auto 18px">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7">
+            <rect x="2" y="7" width="20" height="14" rx="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <h3 id="pr3h">Berufstätige</h3>
+        <p style="margin-bottom:0" id="pr3p">Beruflich etabliert, verantwortungsvoll und langfristig orientiert.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ DAS MODELL ============ -->
+<section class="section" style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" id="k-eye">Das Modell</div>
+      <h2 class="section-title" id="k-ti">Wie das bei uns funktioniert</h2>
+    </div>
+    <div class="split">
+      <div class="dark-panel">
+        <h3 id="k-h">Ein Ansprechpartner. Klare Regeln. Kein Aufwand.</h3>
+        <p id="k-p1">Wir sind Hauptmieter — du mietest direkt von uns. Das bedeutet: ein Vertrag, ein fester Ansprechpartner und klare Abläufe von Anfang an.</p>
+        <p id="k-p2">Kein direkter Kontakt mit dem Eigentümer, keine Koordination mit fremden Verwaltern — wir kümmern uns um alles.</p>
+        <div class="tagline" id="k-tag">Strukturiertes Wohnen. Verlässlich und unkompliziert.</div>
+      </div>
+      <div class="mini-list">
+        <div class="mini">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+          </div>
+          <div><h4 id="km1h">Direkter Mietvertrag mit LF Simplify</h4><p id="km1p">Du mietest von uns — klare Verantwortlichkeiten von Anfang an.</p></div>
+        </div>
+        <div class="mini">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+              <path d="M12 3v18M5 7h14M7 7l-3 7a4.5 4.5 0 0 0 6 0L7 7Zm10 0-3 7a4.5 4.5 0 0 0 6 0l-3-7Z"/>
+            </svg>
+          </div>
+          <div><h4 id="km2h">Hausordnung &amp; Gemeinschaftsregeln</h4><p id="km2p">Verbindliche Regeln schaffen eine ruhige, respektvolle Atmosphäre.</p></div>
+        </div>
+        <div class="mini">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+              <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/>
+            </svg>
+          </div>
+          <div><h4 id="km3h">Fester Ansprechpartner</h4><p id="km3p">Bei Fragen oder Problemen erreichst du uns direkt — ohne Umwege.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ COMING SOON TEASER ============ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band" style="background:var(--navy)">
+      <div class="grid-motif" id="motif" aria-hidden="true" style="max-width:140px;gap:9px;margin:0 auto 30px"></div>
+      <div class="eyebrow center" style="color:var(--gold-2)" id="t-eye">Bald verfügbar</div>
+      <h2 id="t-ti">Deine Zimmer kommen bald.</h2>
+      <p id="t-p">Wir bereiten unsere ersten Wohnungen in der Region Stuttgart vor. Schreib uns schon jetzt — wir melden uns, sobald etwas frei ist.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="index.html#kontakt" class="btn btn-gold" id="t-cta1">Interesse melden <span class="arw">→</span></a>
+        <a href="objekte.html" class="btn btn-light" id="t-cta2">Zu den Objekten</a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">LF <span>Simplify</span> <small style="color:rgba(255,255,255,.4)">· Wohnraum-Management Region Stuttgart</small></div>
     <div class="footer-tag" id="foot-tag">Strukturiertes Wohnen. Verlässliche Vermietung.</div>
-    <div class="footer-links">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </div>
   </div>
 </footer>
-
+ 
 <script>
 const T={
-de:{nav:['Startseite','Für Vermieter','Für Bewohner','Objekte','Kontakt'],sEye:'Für Bewohner',sH1:'Dein Zimmer ist <em>bald</em> hier.',sP:'Ruhige, gepflegte WG-Zimmer für Studenten, Auszubildende und Berufstätige in der Region Stuttgart — wir bereiten gerade unsere ersten Wohnungen vor. Schreib uns schon jetzt, und wir melden uns, sobald etwas frei ist.',sCta1:'Interesse melden',sCta2:'Zur Startseite',footTag:'Strukturiertes Wohnen. Verlässliche Vermietung.'},
-en:{nav:['Home','For landlords','For residents','Properties','Contact'],sEye:'For residents',sH1:'Your room is <em>almost</em> here.',sP:'Calm, well-kept rooms in shared homes for students, apprentices and working professionals in the Stuttgart region — we\u2019re preparing our first apartments right now. Write to us today and we\u2019ll reach out as soon as something is available.',sCta1:'Register interest',sCta2:'Back to home',footTag:'Structured living. Reliable renting.'},
-es:{nav:['Inicio','Para propietarios','Para residentes','Inmuebles','Contacto'],sEye:'Para residentes',sH1:'Tu habitación llega <em>pronto</em>.',sP:'Habitaciones tranquilas y cuidadas en pisos compartidos para estudiantes, aprendices y profesionales en la región de Stuttgart — estamos preparando nuestros primeros pisos. Escríbenos ya y te avisaremos en cuanto haya algo libre.',sCta1:'Registrar interés',sCta2:'Volver al inicio',footTag:'Vivir estructurado. Alquilar con confianza.'}
+de:{
+  nav:['Startseite','Für Vermieter','Für Bewohner','Objekte','Kontakt'],
+  hEye:'Für Bewohner',
+  hH1:'Wohnen ohne <em>Kopfschmerzen.</em>',
+  hP:'Möblierte Zimmer in ruhigen, sorgfältig organisierten Wohngemeinschaften — für Studierende, Azubis und Berufstätige in der Region Stuttgart.',
+  hCta1:'Interesse melden',hCta2:'Zu den Objekten',
+  wEye:'Was dich erwartet',wTi:'Zimmer, die wirklich funktionieren',
+  wSu:'Kein Stress mit Möbelkauf oder schwierigen Mitbewohnern. Einfach einziehen und ankommen.',
+  feats:[
+    ['Möbliert &amp; bezugsfertig','Vollständig ausgestattete Zimmer — du bringst nur deine Koffer mit.'],
+    ['Faire Konditionen','Transparente Mietbedingungen ohne versteckte Kosten oder Überraschungen.'],
+    ['Ruhige Atmosphäre','Sorgfältig ausgewählte Mitbewohner und klare Regeln für ein angenehmes Miteinander.']
+  ],
+  pEye:'Für wen',pTi:'Unsere Bewohner',
+  pSu:'Wir vermieten ausschließlich an ruhige, verlässliche Personen — mit dem Ziel, langfristig stabile Wohngemeinschaften zu schaffen.',
+  profs:[
+    ['Studierende','Lernorientiert, ruhig, mit stabilem Wohnbedarf während des Studiums.'],
+    ['Auszubildende','Zuverlässig, strukturiert und auf der Suche nach einem stabilen Zuhause.'],
+    ['Berufstätige','Beruflich etabliert, verantwortungsvoll und langfristig orientiert.']
+  ],
+  kEye:'Das Modell',kTi:'Wie das bei uns funktioniert',
+  kH:'Ein Ansprechpartner. Klare Regeln. Kein Aufwand.',
+  kP1:'Wir sind Hauptmieter — du mietest direkt von uns. Das bedeutet: ein Vertrag, ein fester Ansprechpartner und klare Abläufe von Anfang an.',
+  kP2:'Kein direkter Kontakt mit dem Eigentümer, keine Koordination mit fremden Verwaltern — wir kümmern uns um alles.',
+  kTag:'Strukturiertes Wohnen. Verlässlich und unkompliziert.',
+  minis:[
+    ['Direkter Mietvertrag mit LF Simplify','Du mietest von uns — klare Verantwortlichkeiten von Anfang an.'],
+    ['Hausordnung &amp; Gemeinschaftsregeln','Verbindliche Regeln schaffen eine ruhige, respektvolle Atmosphäre.'],
+    ['Fester Ansprechpartner','Bei Fragen oder Problemen erreichst du uns direkt — ohne Umwege.']
+  ],
+  tEye:'Bald verfügbar',tTi:'Deine Zimmer kommen bald.',
+  tP:'Wir bereiten unsere ersten Wohnungen in der Region Stuttgart vor. Schreib uns schon jetzt — wir melden uns, sobald etwas frei ist.',
+  tCta1:'Interesse melden',tCta2:'Zu den Objekten',
+  footTag:'Strukturiertes Wohnen. Verlässliche Vermietung.'
+},
+en:{
+  nav:['Home','For landlords','For residents','Properties','Contact'],
+  hEye:'For residents',
+  hH1:'Living without <em>the headache.</em>',
+  hP:'Furnished rooms in calm, carefully organised shared homes — for students, apprentices and working professionals in the Stuttgart region.',
+  hCta1:'Register interest',hCta2:'See properties',
+  wEye:'What to expect',wTi:'Rooms that actually work',
+  wSu:'No stress with furniture shopping or difficult flatmates. Just move in and settle in.',
+  feats:[
+    ['Furnished &amp; move-in ready','Fully equipped rooms — just bring your bags.'],
+    ['Fair conditions','Transparent rental terms with no hidden costs or surprises.'],
+    ['Calm atmosphere','Carefully selected flatmates and clear rules for a pleasant living experience.']
+  ],
+  pEye:'Who it\'s for',pTi:'Our residents',
+  pSu:'We rent exclusively to calm, reliable people — with the goal of creating long-term, stable shared homes.',
+  profs:[
+    ['Students','Study-focused, calm, with a stable housing need throughout their studies.'],
+    ['Apprentices','Reliable, structured and looking for a stable home base.'],
+    ['Professionals','Established, responsible and long-term oriented.']
+  ],
+  kEye:'The model',kTi:'How it works with us',
+  kH:'One contact. Clear rules. Zero hassle.',
+  kP1:'We are the lead tenant — you rent directly from us. That means: one contract, one fixed point of contact and clear processes from day one.',
+  kP2:'No direct contact with the owner, no coordination with unknown managers — we take care of everything.',
+  kTag:'Structured living. Reliable and straightforward.',
+  minis:[
+    ['Direct lease with LF Simplify','You rent from us — clear responsibilities from day one.'],
+    ['House rules &amp; community guidelines','Binding rules create a calm, respectful atmosphere.'],
+    ['Fixed point of contact','For questions or issues, you reach us directly — no detours.']
+  ],
+  tEye:'Coming soon',tTi:'Your rooms are on their way.',
+  tP:'We\'re preparing our first apartments in the Stuttgart region. Write to us now — we\'ll get in touch as soon as something is available.',
+  tCta1:'Register interest',tCta2:'See properties',
+  footTag:'Structured living. Reliable renting.'
+},
+es:{
+  nav:['Inicio','Para propietarios','Para residentes','Inmuebles','Contacto'],
+  hEye:'Para residentes',
+  hH1:'Vivir sin <em>complicaciones.</em>',
+  hP:'Habitaciones amuebladas en pisos compartidos tranquilos y bien organizados — para estudiantes, aprendices y profesionales en la región de Stuttgart.',
+  hCta1:'Registrar interés',hCta2:'Ver inmuebles',
+  wEye:'Qué esperar',wTi:'Habitaciones que realmente funcionan',
+  wSu:'Sin estrés por comprar muebles ni por compañeros difíciles. Solo mudarte y sentirte en casa.',
+  feats:[
+    ['Amueblado y listo para entrar','Habitaciones totalmente equipadas — solo trae tus maletas.'],
+    ['Condiciones justas','Términos de alquiler transparentes sin costes ocultos ni sorpresas.'],
+    ['Ambiente tranquilo','Compañeros seleccionados con cuidado y reglas claras para una convivencia agradable.']
+  ],
+  pEye:'Para quién',pTi:'Nuestros residentes',
+  pSu:'Alquilamos exclusivamente a personas tranquilas y fiables — con el objetivo de crear pisos compartidos estables a largo plazo.',
+  profs:[
+    ['Estudiantes','Centrados en el estudio, tranquilos y con necesidad estable de vivienda.'],
+    ['Aprendices','Fiables, estructurados y en busca de un hogar estable.'],
+    ['Profesionales','Establecidos, responsables y con visión a largo plazo.']
+  ],
+  kEye:'El modelo',kTi:'Cómo funciona con nosotros',
+  kH:'Un contacto. Reglas claras. Sin complicaciones.',
+  kP1:'Somos el arrendatario principal — alquilas directamente de nosotros. Eso significa: un contrato, un contacto fijo y procesos claros desde el primer día.',
+  kP2:'Sin contacto directo con el propietario, sin coordinación con gestores desconocidos — nosotros nos encargamos de todo.',
+  kTag:'Vivir estructurado. Fiable y sin complicaciones.',
+  minis:[
+    ['Contrato directo con LF Simplify','Alquilas de nosotros — responsabilidades claras desde el primer día.'],
+    ['Normas de convivencia','Reglas vinculantes crean una atmósfera tranquila y respetuosa.'],
+    ['Contacto fijo','Para preguntas o problemas nos contactas directamente — sin rodeos.']
+  ],
+  tEye:'Próximamente',tTi:'Tus habitaciones llegan pronto.',
+  tP:'Estamos preparando nuestros primeros pisos en la región de Stuttgart. Escríbenos ya — te avisaremos en cuanto haya algo disponible.',
+  tCta1:'Registrar interés',tCta2:'Ver inmuebles',
+  footTag:'Vivir estructurado. Alquilar con confianza.'
+}
 };
+ 
 function set(id,val,html){const el=document.getElementById(id);if(!el)return;if(html)el.innerHTML=val;else el.textContent=val;}
+function pairs(prefix,arr){arr.forEach((s,i)=>{set(prefix+(i+1)+'h',s[0],true);set(prefix+(i+1)+'p',s[1]);});}
+ 
 function setLang(l){
-  const t=T[l];if(!t)return;document.documentElement.lang=l;
+  const t=T[l];if(!t)return;
+  document.documentElement.lang=l;
   document.querySelectorAll('.lang').forEach(b=>b.classList.toggle('act',b.textContent.trim().toLowerCase()===l));
   t.nav.forEach((v,i)=>set('nav'+i,v));
-  set('s-eye',t.sEye);set('s-h1',t.sH1,true);set('s-p',t.sP);
-  set('s-cta1',t.sCta1+' <span class="arw">→</span>',true);set('s-cta2',t.sCta2);
+  set('h-eye',t.hEye);set('h-h1',t.hH1,true);set('h-p',t.hP);
+  set('h-cta1',t.hCta1+' <span class="arw">→</span>',true);set('h-cta2',t.hCta2);
+  set('w-eye',t.wEye);set('w-ti',t.wTi);set('w-su',t.wSu);
+  pairs('f',t.feats);
+  set('p-eye',t.pEye);set('p-ti',t.pTi);set('p-su',t.pSu);
+  pairs('pr',t.profs);
+  set('k-eye',t.kEye);set('k-ti',t.kTi);
+  set('k-h',t.kH);set('k-p1',t.kP1);set('k-p2',t.kP2);set('k-tag',t.kTag);
+  pairs('km',t.minis);
+  set('t-eye',t.tEye);set('t-ti',t.tTi);set('t-p',t.tP);
+  set('t-cta1',t.tCta1+' <span class="arw">→</span>',true);set('t-cta2',t.tCta2);
   set('foot-tag',t.footTag);
 }
-document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open');});
+ 
+document.getElementById('navToggle').addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.remove('open');
+}));
+ 
+/* Grid-Motif im Coming-soon-Teaser */
 (function(){
   const m=document.getElementById('motif');if(!m)return;
   const on=new Set([1,6,10,13]);
-  for(let i=0;i<16;i++){const s=document.createElement('i');if(on.has(i))s.classList.add('on');s.style.animationDelay=(i*0.04)+'s';m.appendChild(s);}
+  for(let i=0;i<16;i++){
+    const s=document.createElement('i');
+    s.style.background=on.has(i)?'var(--gold-2)':'var(--navy-2)';
+    if(on.has(i))s.classList.add('on');
+    s.style.animationDelay=(i*0.04)+'s';
+    m.appendChild(s);
+  }
 })();
 </script>
 </body>
